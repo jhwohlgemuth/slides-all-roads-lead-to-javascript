@@ -44,8 +44,6 @@ export default class Presentation extends React.Component {
     }
     render() {
         const {slides} = this.state;
-        const header = document.getElementsByTagName('h1');
-        console.log(header);
         return (
             <Deck transition={[]} transitionDuration={0} theme={theme}>
                 {
