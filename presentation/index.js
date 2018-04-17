@@ -13,8 +13,6 @@ import '../assets/prism-overrides/fsharp';
 import '../assets/prism-overrides/reason';
 import '../assets/prism-overrides/rust';
 
-console.log(Prism);
-
 const theme = createTheme({
     primary: 'white',
     secondary: '#1F2022',
