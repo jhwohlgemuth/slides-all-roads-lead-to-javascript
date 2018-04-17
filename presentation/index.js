@@ -2,9 +2,18 @@ import Promise from 'bluebird';
 import React from 'react';
 import {Deck, Slide} from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
-import 'prismjs';
 require('normalize.css');
 require('prismjs/themes/prism-funky.css');
+
+import 'prismjs'
+import 'prismjs/components/prism-kotlin';
+import '../assets/prism-overrides/elm';
+import '../assets/prism-overrides/clojure';
+import '../assets/prism-overrides/fsharp';
+import '../assets/prism-overrides/reason';
+import '../assets/prism-overrides/rust';
+
+console.log(Prism);
 
 const theme = createTheme({
     primary: 'white',
@@ -17,11 +26,30 @@ const theme = createTheme({
 });
 
 const SLIDES = [
-    import('./slides/1'),
-    import('./slides/2'),
-    import('./slides/3'),
-    import('./slides/4'),
-    import('./slides/5')
+    import('./slides/title'),
+    import('./slides/agenda'),
+    import('./slides/why'),
+    import('./slides/what-to-look-for'),
+    import('./slides/ffi'),
+    import('./slides/mix-and-match'),
+    import('./slides/react'),
+    import('./slides/react-transcends-js'),
+    import('./slides/react-transcends-js-but'),
+    import('./slides/react-transcends-js-but-but'),
+    import('./slides/reason'),
+    import('./slides/reason-react'),
+    import('./slides/clojurescript-why'),
+    import('./slides/clojurescript'),
+    import('./slides/clojurescript-reagent'),
+    // import('./slides/clojurescript-figwheel'),
+    // import('./slides/elm'),
+    // import('./slides/fsharp'),
+    // import('./slides/kotlin'),
+    // import('./slides/rust'),
+    // import('./slides/dart'),
+    // import('./slides/coffeescript-and-typescript'),
+    // import('./slides/gradual-addition'),
+    // import('./slides/live-demo')
 ];
 
 export default class Presentation extends React.Component {
