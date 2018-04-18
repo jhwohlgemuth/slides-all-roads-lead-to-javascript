@@ -7,11 +7,12 @@ export default (
         <List>
             <Appear><ListItem>Targeted platform(s)</ListItem></Appear>
             <Appear><ListItem>Interoperability</ListItem></Appear>
-            <Appear><ListItem>Community (and interest)</ListItem></Appear>
+            <Appear><ListItem>Community (interest, idioms, etc...)</ListItem></Appear>
+            <Appear><ListItem>Community (code sharing)</ListItem></Appear>
             <Appear><ListItem>Documentation</ListItem></Appear>
             <Appear><ListItem>Tooling ecosystem</ListItem></Appear>
             <Appear><ListItem>Testing story</ListItem></Appear>
-            <Appear><ListItem>Language features</ListItem></Appear>
+            <Appear><ListItem>Language features (syntax, typing, etc...)</ListItem></Appear>
             <Appear><ListItem>Libraries and Frameworks</ListItem></Appear>
         </List>
     </Slide>

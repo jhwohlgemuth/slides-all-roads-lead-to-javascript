@@ -9,6 +9,7 @@ export default (
             <Appear><ListItem>Performance – idiomatic and fast</ListItem></Appear>
             <Appear><ListItem>Experience – leverage what you have</ListItem></Appear>
             <Appear><ListItem>Experience – learn what you want</ListItem></Appear>
+            <Appear><ListItem>Focused developer experience</ListItem></Appear>
             <Appear><ListItem>Low cost of entry</ListItem></Appear>
             <Appear><ListItem>fun :)</ListItem></Appear>
         </List>

@@ -7,11 +7,17 @@ require('prismjs/themes/prism-funky.css');
 
 import 'prismjs'
 import 'prismjs/components/prism-kotlin';
-import '../assets/prism-overrides/elm';
-import '../assets/prism-overrides/clojure';
-import '../assets/prism-overrides/fsharp';
-import '../assets/prism-overrides/reason';
-import '../assets/prism-overrides/rust';
+import '../prism-overrides/elm';
+import '../prism-overrides/clojure';
+import '../prism-overrides/fsharp';
+import '../prism-overrides/reason';
+import '../prism-overrides/rust';
+
+window.images = {
+    roads: require('../assets/roads.gif'),
+    iceberg: require('../assets/iceberg.jpg'),
+    city: require('../assets/city.jpg')
+};
 
 const theme = createTheme({
     primary: 'white',
@@ -36,18 +42,16 @@ const SLIDES = [
     import('./slides/react-transcends-js-but-but'),
     import('./slides/reason'),
     import('./slides/reason-react'),
-    import('./slides/clojurescript-why'),
     import('./slides/clojurescript'),
+    import('./slides/clojurescript-why'),
     import('./slides/clojurescript-reagent'),
     // import('./slides/clojurescript-figwheel'),
-    // import('./slides/elm'),
-    // import('./slides/fsharp'),
-    // import('./slides/kotlin'),
-    // import('./slides/rust'),
-    // import('./slides/dart'),
-    // import('./slides/coffeescript-and-typescript'),
-    // import('./slides/gradual-addition'),
-    // import('./slides/live-demo')
+    import('./slides/elm'),
+    import('./slides/fsharp'),
+    import('./slides/kotlin'),
+    import('./slides/dart'),
+    // import('./slides/live-demo'),
+    import('./slides/iceberg')
 ];
 
 export default class Presentation extends React.Component {
@@ -70,6 +74,7 @@ export default class Presentation extends React.Component {
     }
     render() {
         const {slides} = this.state;
+        console.log(this);
         return (
             <Deck transition={[]} transitionDuration={0} theme={theme}>
                 {
